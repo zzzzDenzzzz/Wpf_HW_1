@@ -37,91 +37,129 @@
             <RowDefinition Height="3*"/>
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
-        
+
+        <!--отображение предыдущих операций-->
         <TextBox
+            x:Name="textBox_previousOperation"
             Grid.Row="0"
             Grid.ColumnSpan="4"/>
+        <!--отображение вводимого числа-->
         <TextBox
+            x:Name="textBox_inputNumber"
             Grid.Row="1"
             Grid.ColumnSpan="4"/>
-        
+
+        <!--очищает текущее число-->
         <Button
+            x:Name="button_CE"
             Grid.Column="0"
             Grid.Row="2"
             Content="CE"/>
+        <!--очищает текущее число и предыдущее выражение-->
         <Button
+            x:Name="button_C"
             Grid.Column="1"
             Grid.Row="2"
             Content="C"/>
+        <!--очищает последний введенный символ в текущем числе-->
         <Button
+            x:Name="button_clearLastCharacter"
             Grid.Column="2"
             Grid.Row="2"
             Content="&lt;"/>
+        <!--деление-->
         <Button
+            x:Name="button_division"
             Grid.Column="3"
             Grid.Row="2"
             Content="/"/>
-
+        <!--число 7-->
         <Button
+            x:Name="button_7"
             Grid.Column="0"
             Grid.Row="3"
             Content="7"/>
+        <!--число 8-->
         <Button
+            x:Name="button_8"
             Grid.Column="1"
             Grid.Row="3"
             Content="8"/>
+        <!--число 9-->
         <Button
+            x:Name="button_9"
             Grid.Column="2"
             Grid.Row="3"
             Content="9"/>
+        <!--умножение-->
         <Button
+            x:Name="button_multiplication"
             Grid.Column="3"
             Grid.Row="3"
             Content="*"/>
-
+        <!--число 4-->
         <Button
+            x:Name="button_4"
             Grid.Column="0"
             Grid.Row="4"
             Content="4"/>
+        <!--число 5-->
         <Button
+            x:Name="button_5"
             Grid.Column="1"
             Grid.Row="4"
             Content="5"/>
+        <!--число 6-->
         <Button
+            x:Name="button_6"
             Grid.Column="2"
             Grid.Row="4"
             Content="6"/>
+        <!--вычитание-->
         <Button
+            x:Name="button_subtraction"
             Grid.Column="3"
             Grid.Row="4"
             Content="-"/>
-
+        <!--число 1-->
         <Button
+            x:Name="button_1"
             Grid.Column="0"
             Grid.Row="5"
             Content="1"/>
+        <!--число 2-->
         <Button
+            x:Name="button_2"
             Grid.Column="1"
             Grid.Row="5"
             Content="2"/>
+        <!--число 3-->
         <Button
+            x:Name="button_3"
             Grid.Column="2"
             Grid.Row="5"
             Content="3"/>
+        <!--сложение-->
         <Button
+            x:Name="button_addition"
             Grid.Column="3"
             Grid.Row="5"
             Content="+"/>
-
+        <!--точка-->
         <Button
+            x:Name="button_dot"
             Grid.Column="0"
             Grid.Row="6"
             Content="."/>
+        <!--число 0-->
         <Button
+            x:Name="button_0"
             Grid.Column="1"
             Grid.Row="6"
             Content="0"/>
+        <!--вычисляет выражение и выводит результат-->
         <Button
+            x:Name="button_result"
             Grid.ColumnSpan="2"
             Grid.Column="2"
             Grid.Row="6"
